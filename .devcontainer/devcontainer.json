@@ -12,7 +12,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "sudo apt update && sudo apt install gh && python -m pip install --upgrade pip && pip install -r requirements.txt",
+	"postCreateCommand": "chmod +x ./bin/setup.sh && ./bin/setup.sh", //chmod +x to make the setup.sh file executable and avoid permission issues
 	"customizations": {
 		"vscode": {
 			"extensions": [
